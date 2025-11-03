@@ -4,13 +4,13 @@
     "type": "library",
     "license": "proprietary",
     "require": {
-        "php": "^7.1 || ^8.0",
-        "phpmyadmin/motranslator": "^5.3"
+        "php": ">=8.4",
+        "phpmyadmin/motranslator": "^6.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0 || ^9.0",
-        "overtrue/phplint": "^2.4 || ^3.0 || ^4.0",
-        "phpstan/phpstan": "^1.6"
+        "phpunit/phpunit": "^12.0",
+        "overtrue/phplint": "^9.0",
+        "phpstan/phpstan": "^2.0"
     },
     "autoload": {
         "psr-4": {

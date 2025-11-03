@@ -68,7 +68,7 @@ class Translator
      * and then if not found by looking into the global translations
      *
      * @param string $msgId
-     * @param array<string, mixed> $params
+     * @param array<string, string> $params
      * @param bool $capitalize
      * @return string
      */
@@ -84,7 +84,8 @@ class Translator
             return sprintf('{%s}', $key);
         }, array_keys($params));
 
-        $translated = str_replace(array_values($keys), array_values($params), $value);
+        $translated = str_replace($keys, array_values($params), $value);
+
         return $capitalize ? \ucfirst($translated) : $translated;
     }
 }
